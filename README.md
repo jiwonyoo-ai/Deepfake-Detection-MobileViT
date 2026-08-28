@@ -34,13 +34,19 @@ Binary Classification
 Real / Fake
      ↓
 Performance Evaluation
-Workflow
-1. Data Preprocessing
+```
+
+---
+
+## Workflow
+
+### 1. Data Preprocessing
 
 이미지 및 영상 데이터를 모델 학습에 사용할 수 있도록 전처리했습니다.
 
 영상 데이터는 프레임 단위의 이미지로 변환하여 이미지 classification 방식으로 처리했습니다.
 
+```text
 Video
   ↓
 Frame Extraction
@@ -48,38 +54,42 @@ Frame Extraction
 Resize / Normalization
   ↓
 Model Input
-2. MobileViT-based Classification
+```
+
+### 2. MobileViT-based Classification
 
 MobileViT를 딥페이크 탐지를 위한 classification model로 활용했습니다.
 
-CNN 기반의 local feature extraction과 Transformer 기반의 global representation을 결합한 구조를 통해 이미지의 시각적 특징을 학습하고 Real / Fake binary classification을 수행했습니다.
+CNN 기반의 local feature extraction과 Transformer 기반의 global representation을 결합한 구조를 통해 이미지의 시각적 특징을 학습하고 **Real / Fake binary classification**을 수행했습니다.
 
-3. Model Comparison
+### 3. Model Comparison
 
 MobileViT의 특성을 분석하기 위해 다른 딥러닝 기반 분류 모델과 성능을 비교했습니다.
 
-주요 평가 지표로 Accuracy, Precision, Recall, F1-score를 활용했습니다.
+주요 평가 지표로 **Accuracy, Precision, Recall, F1-score**를 활용했습니다.
 
-Tech Stack
+---
 
-Programming
+## Tech Stack
 
-Python
+**Programming**
 
-Deep Learning
+* Python
 
-MobileViT
-CNN
-Vision Transformer
+**Deep Learning**
 
-Data Processing
+* MobileViT
+* CNN
+* Vision Transformer
 
-Image Processing
-Video Frame Extraction
+**Data Processing**
 
-Evaluation
+* Image Processing
+* Video Frame Extraction
 
-Accuracy
-Precision
-Recall
-F1-score
+**Evaluation**
+
+* Accuracy
+* Precision
+* Recall
+* F1-score
